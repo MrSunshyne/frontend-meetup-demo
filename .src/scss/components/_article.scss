@@ -9,9 +9,7 @@ body{
 
   .blocks{
     @include _(2,10);
-
-    @include _(for mobile){
-      @include _(10,10);
-    }
+    
+    @include _(2 5 10 10,10 10 10 10);
   }
 }

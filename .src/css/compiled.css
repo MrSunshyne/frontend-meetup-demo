@@ -41,6 +41,10 @@ body {
   width: 0%;
   margin-right: 10%;
   margin-left: 10%;
+  float: left;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 @media (min-width: 1025px) {
@@ -67,32 +71,23 @@ body {
   }
 }
 
-@media (min-width: 0) and (max-width: 480px) {
+@media (min-width: 1025px) {
   .container .blocks {
-    float: left;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-}
-
-@media (min-width: 0) and (max-width: 480px) and (min-width: 1025px) {
-  .container .blocks {
-    width: 92.61538%;
+    width: 12.61538%;
     margin-right: 3.69231%;
     margin-left: 3.69231%;
   }
 }
 
-@media (min-width: 0) and (max-width: 480px) and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .container .blocks {
-    width: 90.625%;
+    width: 40.625%;
     margin-right: 4.6875%;
     margin-left: 4.6875%;
   }
 }
 
-@media (min-width: 0) and (max-width: 480px) and (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .container .blocks {
     width: 87.5%;
     margin-right: 6.25%;
