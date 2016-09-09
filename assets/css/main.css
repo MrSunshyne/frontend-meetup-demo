@@ -1,3 +1,12 @@
 body{
 	background: red;
 }
+
+.container{
+    width: 100%;
+}
+
+.blocks{
+    width: 20%;
+    float:left;
+}
