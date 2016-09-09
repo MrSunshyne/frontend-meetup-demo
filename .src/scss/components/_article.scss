@@ -2,10 +2,16 @@ body{
   background:blue;
 }
 
+.blocks{text-align:center;}
+
 .container{
   @include _(clear);
 
   .blocks{
     @include _(2,10);
+
+    @include _(for mobile){
+      @include _(10,10);
+    }
   }
 }
