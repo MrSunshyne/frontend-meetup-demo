@@ -1,0 +1,33 @@
+$flint: (
+    "settings": (
+        "default": "mobile",
+        "grid": "fluid",
+        "gutter": $gutter,
+        "float-direction": "left",
+        "max-width": true,
+        "center-container": true,
+        "border-box-sizing": true,
+        "instance-maps": true,
+        "support-syntax": false,
+        "debug-mode": false
+    ),
+
+    "breakpoints": (
+        "desktop": (
+            "columns": 12,
+            "breakpoint": $desktop
+        ),
+        "tablet": (
+                "columns": 12,
+                "breakpoint": $tablet
+        ),
+        "tablet-portrait": (
+                "columns": 12,
+                "breakpoint": $tablet-portrait
+        ),
+        "mobile": (
+            "columns": 12,
+            "breakpoint": $mobile
+        )
+    )
+);
