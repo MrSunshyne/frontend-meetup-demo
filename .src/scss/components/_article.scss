@@ -5,11 +5,15 @@ body{
 .blocks{text-align:center;}
 
 .container{
-  @include _(clear);
+  //@include _(clear);
+  lost-utility: clearfix;
 
   .blocks{
-    @include _(2,10);
-    
-    @include _(2 5 10 10,10 10 10 10);
+    //@include _(2,10);
+
+    //@include _(2 5 10 10,10 10 10 10);
+
+    lost-column : 2/6;
+    lost-column-cycle : 3;
   }
 }

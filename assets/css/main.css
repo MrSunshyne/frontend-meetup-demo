@@ -18,79 +18,10 @@ body {
 }
 
 .container {
-  zoom: 1;
-}
-
-.container:before, .container:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-
-.container:after {
-  clear: both;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
+  lost-utility: clearfix;
 }
 
 .container .blocks {
-  float: left;
-  width: 0%;
-  margin-right: 10%;
-  margin-left: 10%;
-  float: left;
-  width: 80%;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-@media (min-width: 1025px) {
-  .container .blocks {
-    width: 12.61538%;
-    margin-right: 3.69231%;
-    margin-left: 3.69231%;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container .blocks {
-    width: 10.625%;
-    margin-right: 4.6875%;
-    margin-left: 4.6875%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .container .blocks {
-    width: 7.5%;
-    margin-right: 6.25%;
-    margin-left: 6.25%;
-  }
-}
-
-@media (min-width: 1025px) {
-  .container .blocks {
-    width: 12.61538%;
-    margin-right: 3.69231%;
-    margin-left: 3.69231%;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container .blocks {
-    width: 40.625%;
-    margin-right: 4.6875%;
-    margin-left: 4.6875%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .container .blocks {
-    width: 87.5%;
-    margin-right: 6.25%;
-    margin-left: 6.25%;
-  }
+  lost-column: 2/6;
+  lost-column-cycle: 3;
 }

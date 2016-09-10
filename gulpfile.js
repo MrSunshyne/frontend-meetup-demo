@@ -14,6 +14,10 @@ var concat          = require('gulp-concat');
 var sass            = require('gulp-sass');
 var runSequence     = require('run-sequence');
 var rename          = require('gulp-rename');
+var cssnano         = require('cssnano');
+var postcss         = require('gulp-postcss');
+var cssnext         = require('postcss-cssnext');
+var lostgrid        = require('lost');
 
 /**
  * Define all Paths
@@ -69,9 +73,14 @@ function cb(){
  */
 
 gulp.task('_compile_css', function () {
-
+    var processors = [
+        //cssnext({browsers: ['last 1 version']}),
+        lostgrid(),
+        cssnano()
+    ];
     return gulp.src(bases.src + paths.scss)
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(postcss(processors))
         .pipe(rename('compiled.css'))
         .pipe(gulp.dest(bases.src + 'css'));
 });
